@@ -1,7 +1,8 @@
 package org.example;
 public class MaxValue {
-    public Integer maximumInteger(Integer x, Integer y, Integer z) {
-        Integer maxiValue = x;
+    public Float maximumFloat(Float x, Float y, Float z)
+    {
+        Float  maxiValue = x;
         if (y.compareTo(maxiValue) > 0)
             maxiValue = y;
         if (z.compareTo(maxiValue) > 0)
@@ -11,9 +12,8 @@ public class MaxValue {
 
     public static void main(String[] args)
     {
-        // System.out.println(" Maximum Using Generics");
         MaxValue maxValue = new MaxValue();
-        System.out.println("Maximum Value of Integer : " + maxValue.maximumInteger(50, 55, 88));
+        System.out.println("Maximum Value of Float  : " + maxValue.maximumFloat(50.50F, 1.5f, 8.1f));
 
     }
 }
